@@ -56,4 +56,4 @@ You are now ready to stream with the overlay.
 
 As the streamed set(s) progress, you can update the overlay by filling in the inputs and clicking Submit in the overlay manager.
 
-At this step, the overlay finally dynamically updates whenever the CSS is altered!
+At this step, the overlay dynamically updates whenever the CSS is altered!
