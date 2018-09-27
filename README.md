@@ -16,8 +16,6 @@ I kept the code as simple and seperated in different functions as possible, to m
 **How to use:**
 **How to use in Visual Studio:**
 - Open SmashWiiUOverlayManager.sln using Visual Studio.
-
-
 - Run the application.
 
 ![alt img](https://imgur.com/na4ecHT.png)
