@@ -22,6 +22,7 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
@@ -34,25 +35,27 @@
         </Grid.ColumnDefinitions>
 
         <!--Column 1-->
-        <TextBlock Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left">Player 1 Name</TextBlock>
+        <TextBlock Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" FontWeight="Bold">Player 1</TextBlock>
 
-        <TextBox Grid.Column="1" Grid.Row="2" HorizontalAlignment="Left" MinWidth="144" Text="{Binding Path=MainViewModel.Player1Name, Mode=TwoWay}"></TextBox>
+        <TextBlock Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center">Name</TextBlock>
 
-        <TextBlock Grid.Column="1" Grid.Row="3" HorizontalAlignment="Left">Player 1 Sponsor (acr)</TextBlock>
+        <TextBox Grid.Column="1" Grid.Row="3" HorizontalAlignment="Center" MinWidth="144" Text="{Binding Path=MainViewModel.Player1Name, Mode=TwoWay}"></TextBox>
 
-        <TextBox Grid.Column="1" Grid.Row="4" HorizontalAlignment="Left" MinWidth="144" Text="{Binding Path=MainViewModel.Player1Sponsor, Mode=TwoWay}"></TextBox>
+        <TextBlock Grid.Column="1" Grid.Row="4" HorizontalAlignment="Center">Sponsor (acr)</TextBlock>
 
-        <TextBlock Grid.Column="1" Grid.Row="5" HorizontalAlignment="Left">Player 1 Twitter</TextBlock>
+        <TextBox Grid.Column="1" Grid.Row="5" HorizontalAlignment="Center" MinWidth="144" Text="{Binding Path=MainViewModel.Player1Sponsor, Mode=TwoWay}"></TextBox>
 
-        <TextBox Grid.Column="1" Grid.Row="6" HorizontalAlignment="Left" MinWidth="144" Text="{Binding Path=MainViewModel.Player1Twitter, Mode=TwoWay}"></TextBox>
+        <TextBlock Grid.Column="1" Grid.Row="6" HorizontalAlignment="Center">Twitter</TextBlock>
 
-        <TextBlock Grid.Column="1" Grid.Row="7" HorizontalAlignment="Left">Player 1 Score</TextBlock>
+        <TextBox Grid.Column="1" Grid.Row="7" HorizontalAlignment="Center" MinWidth="144" Text="{Binding Path=MainViewModel.Player1Twitter, Mode=TwoWay}"></TextBox>
 
-        <TextBox Grid.Column="1" Grid.Row="8" HorizontalAlignment="Left" MinWidth="144" Text="{Binding Path=MainViewModel.Player1Score, Mode=TwoWay}"></TextBox>
+        <TextBlock Grid.Column="1" Grid.Row="8" HorizontalAlignment="Center">Score</TextBlock>
 
-        <TextBlock Grid.Column="1" Grid.Row="9" HorizontalAlignment="Left">Player 1 Character</TextBlock>
+        <TextBox Grid.Column="1" Grid.Row="9" HorizontalAlignment="Center" MinWidth="144" Text="{Binding Path=MainViewModel.Player1Score, Mode=TwoWay}"></TextBox>
 
-        <StackPanel Grid.Column="1" Grid.Row="10">
+        <TextBlock Grid.Column="1" Grid.Row="10" HorizontalAlignment="Center">Character</TextBlock>
+
+        <StackPanel Grid.Column="1" Grid.Row="11" HorizontalAlignment="Center">
             <ComboBox 
 		        Name="Player1CharacterDropdown" 
 		        ItemsSource="{Binding Path=MainViewModel.CharacterList, Mode=TwoWay}" 
@@ -63,9 +66,9 @@
             </ComboBox>
         </StackPanel>
 
-        <TextBlock Grid.Column="1" Grid.Row="11"  HorizontalAlignment="Left">Player 1 Port</TextBlock>
+        <TextBlock Grid.Column="1" Grid.Row="12"  HorizontalAlignment="Center">Port</TextBlock>
 
-        <StackPanel Grid.Column="1" Grid.Row="12" HorizontalAlignment="Left">
+        <StackPanel Grid.Column="1" Grid.Row="13" HorizontalAlignment="Center">
             <ComboBox 
 		        Name="Player1PortDropdown" 
 		        ItemsSource="{Binding Path=MainViewModel.PortList, Mode=TwoWay}" 
@@ -77,40 +80,44 @@
         </StackPanel>
 
         <!--Column 2-->
-        <TextBlock Grid.Column="2" Grid.Row="1" HorizontalAlignment="Center">Tournament</TextBlock>
+        <TextBlock Grid.Column="2" Grid.Row="1" HorizontalAlignment="Center" FontWeight="Bold">Tournament</TextBlock>
+        
+        <TextBlock Grid.Column="2" Grid.Row="2" HorizontalAlignment="Center">Name</TextBlock>
 
-        <TextBox Grid.Column="2" Grid.Row="2" HorizontalAlignment="Center" MinWidth="144" Text="{Binding Path=MainViewModel.TournamentName, Mode=TwoWay}"></TextBox>
+        <TextBox Grid.Column="2" Grid.Row="3" HorizontalAlignment="Center" MinWidth="144" Text="{Binding Path=MainViewModel.TournamentName, Mode=TwoWay}"></TextBox>
 
-        <TextBlock Grid.Column="2" Grid.Row="3" HorizontalAlignment="Center">Round</TextBlock>
+        <TextBlock Grid.Column="2" Grid.Row="4" HorizontalAlignment="Center">Round</TextBlock>
 
-        <TextBox Grid.Column="2" Grid.Row="4" HorizontalAlignment="Center" MinWidth="144" Text="{Binding Path=MainViewModel.Round, Mode=TwoWay}"></TextBox>
+        <TextBox Grid.Column="2" Grid.Row="5" HorizontalAlignment="Center" MinWidth="144" Text="{Binding Path=MainViewModel.Round, Mode=TwoWay}"></TextBox>
 
-        <TextBlock Grid.Column="2" Grid.Row="5" HorizontalAlignment="Center">Best of</TextBlock>
+        <TextBlock Grid.Column="2" Grid.Row="6" HorizontalAlignment="Center">Best of</TextBlock>
 
-        <TextBox Grid.Column="2" Grid.Row="6" HorizontalAlignment="Center" MinWidth="144" Text="{Binding Path=MainViewModel.BestOf, Mode=TwoWay}"></TextBox>
+        <TextBox Grid.Column="2" Grid.Row="7" HorizontalAlignment="Center" MinWidth="144" Text="{Binding Path=MainViewModel.BestOf, Mode=TwoWay}"></TextBox>
 
         <Button Grid.Column="2" Grid.Row="8" HorizontalAlignment="Center" Click="Submit">Submit</Button>
 
         <!--Column 3-->
-        <TextBlock Grid.Column="3" Grid.Row="1" HorizontalAlignment="Right">Player 2 Name</TextBlock>
+        <TextBlock Grid.Column="3" Grid.Row="1" HorizontalAlignment="Center" FontWeight="Bold">Player 2</TextBlock>
 
-        <TextBox Grid.Column="3" Grid.Row="2" HorizontalAlignment="Right" MinWidth="144" Text="{Binding Path=MainViewModel.Player2Name, Mode=TwoWay}"></TextBox>
+        <TextBlock Grid.Column="3" Grid.Row="2" HorizontalAlignment="Center">Name</TextBlock>
 
-        <TextBlock Grid.Column="3" Grid.Row="3" HorizontalAlignment="Right">Player 2 Sponsor (acr)</TextBlock>
+        <TextBox Grid.Column="3" Grid.Row="3" HorizontalAlignment="Center" MinWidth="144" Text="{Binding Path=MainViewModel.Player2Name, Mode=TwoWay}"></TextBox>
 
-        <TextBox Grid.Column="3" Grid.Row="4" HorizontalAlignment="Right" MinWidth="144" Text="{Binding Path=MainViewModel.Player2Sponsor, Mode=TwoWay}"></TextBox>
+        <TextBlock Grid.Column="3" Grid.Row="4" HorizontalAlignment="Center">Sponsor (acr)</TextBlock>
 
-        <TextBlock Grid.Column="3" Grid.Row="5" HorizontalAlignment="Right">Player 2 Twitter</TextBlock>
+        <TextBox Grid.Column="3" Grid.Row="5" HorizontalAlignment="Center" MinWidth="144" Text="{Binding Path=MainViewModel.Player2Sponsor, Mode=TwoWay}"></TextBox>
 
-        <TextBox Grid.Column="3" Grid.Row="6" HorizontalAlignment="Right" MinWidth="144" Text="{Binding Path=MainViewModel.Player2Twitter, Mode=TwoWay}"></TextBox>
+        <TextBlock Grid.Column="3" Grid.Row="6" HorizontalAlignment="Center">Twitter</TextBlock>
 
-        <TextBlock Grid.Column="3" Grid.Row="7" HorizontalAlignment="Right">Player 2 Score</TextBlock>
+        <TextBox Grid.Column="3" Grid.Row="7" HorizontalAlignment="Center" MinWidth="144" Text="{Binding Path=MainViewModel.Player2Twitter, Mode=TwoWay}"></TextBox>
 
-        <TextBox Grid.Column="3" Grid.Row="8" HorizontalAlignment="Right" MinWidth="144" Text="{Binding Path=MainViewModel.Player2Score, Mode=TwoWay}"></TextBox>
+        <TextBlock Grid.Column="3" Grid.Row="8" HorizontalAlignment="Center">Score</TextBlock>
 
-        <TextBlock Grid.Column="3" Grid.Row="9" HorizontalAlignment="Right">Player 2 Character</TextBlock>
+        <TextBox Grid.Column="3" Grid.Row="9" HorizontalAlignment="Center" MinWidth="144" Text="{Binding Path=MainViewModel.Player2Score, Mode=TwoWay}"></TextBox>
 
-        <StackPanel Grid.Column="3" Grid.Row="10" HorizontalAlignment="Right">
+        <TextBlock Grid.Column="3" Grid.Row="10" HorizontalAlignment="Center">Character</TextBlock>
+
+        <StackPanel Grid.Column="3" Grid.Row="11" HorizontalAlignment="Center">
             <ComboBox 
 		        Name="Player2CharacterDropdown" 
 		        ItemsSource="{Binding Path=MainViewModel.CharacterList, Mode=TwoWay}" 
@@ -121,9 +128,9 @@
             </ComboBox>
         </StackPanel>
 
-        <TextBlock Grid.Column="3" Grid.Row="11" HorizontalAlignment="Right">Player 2 Port</TextBlock>
+        <TextBlock Grid.Column="3" Grid.Row="12" HorizontalAlignment="Center">Port</TextBlock>
 
-        <StackPanel Grid.Column="3" Grid.Row="12" HorizontalAlignment="Right">
+        <StackPanel Grid.Column="3" Grid.Row="13" HorizontalAlignment="Right">
             <ComboBox 
 		        Name="Player2PortDropdown" 
 		        ItemsSource="{Binding Path=MainViewModel.PortList, Mode=TwoWay}" 
