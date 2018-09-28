@@ -27,10 +27,12 @@ You can doublecheck whether the application works now by checking if all of the 
 - player1NameText.css
 - player1Port.css
 - player1Score.css
+- player1TwitterText.css
 - player2Character.css
 - player2NameText.css
 - player2Port.css
 - player2Score.css
+- player2TwitterText.css
 - roundBoxText.css
 - tournamentBoxText.css
 - styles.css (is there by default)
