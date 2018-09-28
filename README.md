@@ -3,8 +3,6 @@ Step 3 of a project to create a dynamically editable overlay for Super Smash Bro
 
 Changes from Step 2:
 - The manager solution/application has been added to the project, meaning you don't have to manually edit css files!
-- Player Ports and Player Backgrounds are now separated.
-- Added JQuery library to dynamically update the overlay when the CSS is altered.
 
 Anyone is allowed to clone this repository and create their own overlay manager if they feel it lacks some functionality that they need for their own tournament streams. I will not accept any pull requests unless it fixes an important bug.
 
@@ -25,16 +23,17 @@ I kept the code as simple and seperated in different functions as possible, to m
 ![alt img](https://imgur.com/dtz4LoR.png)
 
 You can doublecheck whether the application works now by checking if all of the following files exist in "\SmashWiiUOverlayManager\SmashWiiUOverlayManager\bin\ {Debug/Release} \Files\css":
-- player1Character.css.
-- player1NameText.css.
-- player1Port.css.
-- player1Score.css.
-- player2Character.css.
-- player2NameText.css.
-- player2Port.css.
-- player2Score.css.
-- roundBoxTest.css.
-- styles.css. (is there by default)
+- player1Character.css
+- player1NameText.css
+- player1Port.css
+- player1Score.css
+- player2Character.css
+- player2NameText.css
+- player2Port.css
+- player2Score.css
+- roundBoxText.css
+- tournamentBoxText.css
+- styles.css (is there by default)
 
 **How to use in Open Broadcaster Software (OBS Studio):**
 - Add a new Browser source to your scene.
