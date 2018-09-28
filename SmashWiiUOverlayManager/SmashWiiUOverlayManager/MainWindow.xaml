@@ -79,7 +79,7 @@
         <!--Column 2-->
         <TextBlock Grid.Column="2" Grid.Row="1" HorizontalAlignment="Center">Tournament</TextBlock>
 
-        <TextBox Grid.Column="2" Grid.Row="2" HorizontalAlignment="Center" MinWidth="144" Text="{Binding Path=MainViewModel.Tournament, Mode=TwoWay}"></TextBox>
+        <TextBox Grid.Column="2" Grid.Row="2" HorizontalAlignment="Center" MinWidth="144" Text="{Binding Path=MainViewModel.TournamentName, Mode=TwoWay}"></TextBox>
 
         <TextBlock Grid.Column="2" Grid.Row="3" HorizontalAlignment="Center">Round</TextBlock>
 
@@ -87,7 +87,7 @@
 
         <TextBlock Grid.Column="2" Grid.Row="5" HorizontalAlignment="Center">Best of</TextBlock>
 
-        <TextBox Grid.Column="2" Grid.Row="6" HorizontalAlignment="Center" MinWidth="40" MaxWidth="144" Text="{Binding Path=MainViewModel.BestOf, Mode=TwoWay}"></TextBox>
+        <TextBox Grid.Column="2" Grid.Row="6" HorizontalAlignment="Center" MinWidth="144" Text="{Binding Path=MainViewModel.BestOf, Mode=TwoWay}"></TextBox>
 
         <Button Grid.Column="2" Grid.Row="8" HorizontalAlignment="Center" Click="Submit">Submit</Button>
 

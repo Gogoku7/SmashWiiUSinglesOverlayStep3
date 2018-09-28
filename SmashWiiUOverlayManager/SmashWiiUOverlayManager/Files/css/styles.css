@@ -1,15 +1,13 @@
-body
-{
-	margin: 0px;
-	padding: 0px;
+body {
+    margin: 0px;
+    padding: 0px;
 }
 
 /* players */
 
-.players
-{
-	width: 1920px;
-	height: 80px;
+.players {
+    width: 1920px;
+    height: 80px;
 }
 
 /* players END*/
@@ -18,20 +16,17 @@ body
 
 /* player */
 
-.player
-{
-	width: 960px;
-	height: 80px;
+.player {
+    width: 960px;
+    height: 80px;
 }
 
-#player1
-{
-	float: left;
+#player1 {
+    float: left;
 }
 
-#player2
-{
-	float: right;
+#player2 {
+    float: right;
 }
 
 /* player END */
@@ -40,54 +35,56 @@ body
 
 /* playerBox */
 
-.playerBox
-{
-	width: 650px;
-	height: 50px;
-	margin-top: 30px;
-	overflow: hidden;
+.playerBox {
+    width: 650px;
+    height: 50px;
+    margin-top: 30px;
+    overflow: hidden;
+    animation: showPlayerBox 1s;
 }
 
-#player1Box
-{
-	float: right;
-	animation: showPlayerBox 1s;
-	background-image: url('../playerBackgrounds/player1Background.png');
+#player1Box {
+    float: right;
+    background-image: url('..\\playerBackgrounds\\player1Background.png');
 }
 
-#player2Box
-{
-	float: left;
-	animation: showPlayerBox 1s;
-	background-image: url('../playerBackgrounds/player2Background.png');
+#player2Box {
+    float: left;
+    background-image: url('..\\playerBackgrounds\\player2Background.png');
 }
 
 /* playerBox END */
 
 
+/* playerScoreBox */
+
+.playerScoreBox {
+    width: 20px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+#player1ScoreBox {
+    float: left;
+    margin-left: 10px;
+}
+
+#player2ScoreBox {
+    float: right;
+    margin-right: 10px;
+}
+
+/* playerScoreBox END */
+
+
 
 /* playerScore */
 
-.playerScore
-{
-	color: white;
-	font-size: 25px;
-	margin-top: 11px;
-	margin-bottom: 11px;
+.playerScore {
+    color: white;
+    margin: 0;
 }
-
-#player1ScoreText
-{
-	float: left;
-	margin-left: 30px;
-}
-
-#player2ScoreText
-{
-	float: right;
-	margin-right: 30px;
-}
-
 
 /* playerScore END */
 
@@ -95,23 +92,21 @@ body
 
 /* playerPort */
 
-.playerPort
-{
-	width: 50px;
-	height: 50px;
-	display:inline-block;
+.playerPort {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background-repeat: no-repeat;
 }
 
-#player1Port
-{
-	float: left;
-	margin-left: 100px;
+#player1Port {
+    float: left;
+    margin-left: 50px;
 }
 
-#player2Port
-{
-	float: right;
-	margin-right: 100px;
+#player2Port {
+    float: right;
+    margin-right: 50px;
 }
 
 /* playerPort END */
@@ -120,86 +115,147 @@ body
 
 /* playerCharacter */
 
-.playerCharacter
-{
-	width: 50px;
-	height: 50px;
-	background-size: contain;
-	background-repeat: no-repeat;
-}
-
-#player1Character
-{
-	
-}
-
-#player2Character
-{
-	
+.playerCharacter {
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 /* playerCharacterEnd */
 
 
+/* playerNameBox */
+
+.playerNameBox {
+    width: 250px;
+    height: 50px;
+}
+
+#player1NameBox {
+    float: left;
+    margin-left: 150px;
+    text-align: center;
+}
+
+#player2NameBox {
+    float: right;
+    margin-right: 150px;
+    text-align: center;
+}
+
+/* playerNameBox END */
+
+
+
+/* playerNameContainer */
+
+.playerNameContainer {
+    min-width: 100px;
+    max-width: 250px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+#player1NameContainer {
+    float: left;
+}
+
+#player2NameContainer {
+    float: right;
+}
+
+/* playerNameContainer END */
+
+
 
 /* playerName */
 
-.playerName
-{
-	color: white;
-	font-size: 25px;
-	margin-top: 11px;
-	margin-bottom: 11px;
-}
-
-#player1NameText
-{
-	float: left;
-	margin-left: 150px;
-}
-
-#player2NameText
-{
-	float: right;
-	margin-right: 150px;
+.playerName {
+    color: white;
+    margin: 0;
 }
 
 /* playerName END*/
 
 
+/* tournamentInfo */
 
-/* roundBox */
-
-.roundBox
-{
-	width: auto;
-	height: auto;
+.tournamentInfo {
+    width: 1920px;
+    height: 18px;
 }
 
-#roundBox
-{
-	width: 150px;
-	text-align: center;
-	background-image: url('../roundBoxBackground/roundBoxBackground.png');
+/* tournamentInfo END */
+
+
+
+/* info */
+
+.info {
+    width: 960px;
+    height: 18px;
 }
 
-#roundBoxText
-{
-	color: white;
-	margin: 0px;
-	white-space: nowrap;
+#infoRound {
+    float: left;
 }
 
-/* roundBox END */
+#infoTournament {
+    float: right;
+}
+
+/* info END */
+
+
+
+/* infoBox */
+
+.infoBox {
+    width: auto;
+    height: 18px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+    background-image: url('..\\boxBackground\\infoBoxBackground.png');
+}
+
+#infoRoundBox {
+    float: right;
+}
+
+#infoTournamentBox {
+    float: left;
+}
+
+/* infoBox END */
+
+
+
+/* boxText */
+
+.boxText {
+    width: auto;
+    margin: 0px;
+    white-space: nowrap;
+    color: white;
+}
+
+/* BoxText END */
 
 
 
 /* animations */
 
-@keyframes showPlayerBox
-{
-	0% {width:0%}
-	100% {width:67.70833333333333%}
+@keyframes showPlayerBox {
+    0% {
+        width: 0%
+    }
+
+    100% {
+        width: 67.70833333333333%
+    }
 }
 
 /* animations END */

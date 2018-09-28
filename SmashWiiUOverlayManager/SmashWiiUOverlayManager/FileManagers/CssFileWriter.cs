@@ -9,6 +9,22 @@ namespace SmashWiiUOverlayManager.FileManagers
 {
     public class CssFileWriter
     {
+        public void WriteFile(string filePath, string cssText)
+        {
+            if (string.IsNullOrEmpty(filePath))
+            {
+                throw new ArgumentNullException(filePath);
+            }
+            try
+            {
+                File.WriteAllText(filePath, cssText);
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+        }
+
         public void WritePlayer1CharacterFile(string content)
         {
             var filePath = @"Files\css\player1Character.css";

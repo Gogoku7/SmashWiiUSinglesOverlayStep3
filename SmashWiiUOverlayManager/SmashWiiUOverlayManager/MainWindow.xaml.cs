@@ -43,54 +43,62 @@ namespace SmashWiiUOverlayManager
             try
             {
                 var cssFileReader = new CssFileReader();
-                var cssFileDeleter = new CssFileDeleter();
                 var cssFileTextReplacer = new CssFileTextReplacer();
                 var cssFileWriter = new CssFileWriter();
 
                 //Read
-                var player1CharacterTemplateCss = cssFileReader.ReadPlayer1CharacterTemplateFile();
-                var player2CharacterTemplateCss = cssFileReader.ReadPlayer2CharacterTemplateFile();
+                var player1ScoreTextTemplateCss = cssFileReader.ReadTemplateFile(@"Files\cssTemplates\player1ScoreText.css");
+                var player2ScoreTextTemplateCss = cssFileReader.ReadTemplateFile(@"Files\cssTemplates\player2ScoreText.css");
 
-                var player1NameTextTemplateCss = cssFileReader.ReadPlayer1NameTextTemplateFile();
-                var player2NameTextTemplateCss = cssFileReader.ReadPlayer2NameTextTemplateFile();
+                var player1NameTextTemplateCss = cssFileReader.ReadTemplateFile(@"Files\cssTemplates\player1NameText.css");
+                var player2NameTextTemplateCss = cssFileReader.ReadTemplateFile(@"Files\cssTemplates\player2NameText.css");
 
-                var player1PortTemplateCss = cssFileReader.ReadPlayer1PortTemplateFile();
-                var player2PortTemplateCss = cssFileReader.ReadPlayer2PortTemplateFile();
+                var player1CharacterTemplateCss = cssFileReader.ReadTemplateFile(@"Files\cssTemplates\player1Character.css");
+                var player2CharacterTemplateCss = cssFileReader.ReadTemplateFile(@"Files\cssTemplates\player2Character.css");
 
-                var player1ScoreTextTemplateCss = cssFileReader.ReadPlayer1ScoreTextTemplateFile();
-                var player2ScoreTextTemplateCss = cssFileReader.ReadPlayer2ScoreTextTemplateFile();
+                var player1PortTemplateCss = cssFileReader.ReadTemplateFile(@"Files\cssTemplates\player1Port.css");
+                var player2PortTemplateCss = cssFileReader.ReadTemplateFile(@"Files\cssTemplates\player2Port.css");
 
-                var roundBoxTextTemplateCss = cssFileReader.ReadRoundBoxTextTemplateFile();
+                var player1TwitterTextTemplateCss = cssFileReader.ReadTemplateFile(@"Files\cssTemplates\player1TwitterText.css");
+                var player2TwitterTextTemplateCss = cssFileReader.ReadTemplateFile(@"Files\cssTemplates\player2TwitterText.css");
+
+                var roundBoxTextTemplateCss = cssFileReader.ReadTemplateFile(@"Files\cssTemplates\roundBoxText.css");
+                var tournamentBoxTextTemplateCss = cssFileReader.ReadTemplateFile(@"Files\cssTemplates\tournamentBoxText.css");
 
                 //Replace
-                var player1CharacterCss = cssFileTextReplacer.ReplacePlayer1CharacterTemplateFileText(player1CharacterTemplateCss, MainViewModel.Player1SelectedCharacter.Path);
-                var player2CharacterCss = cssFileTextReplacer.ReplacePlayer1CharacterTemplateFileText(player2CharacterTemplateCss, MainViewModel.Player2SelectedCharacter.Path);
+                var player1ScoreTextCss = cssFileTextReplacer.ReplaceTemplateFileText(player1ScoreTextTemplateCss, !string.IsNullOrEmpty(MainViewModel.Player1Score) ? MainViewModel.Player1Score : "0");
+                var player2ScoreTextCss = cssFileTextReplacer.ReplaceTemplateFileText(player2ScoreTextTemplateCss, !string.IsNullOrEmpty(MainViewModel.Player2Score) ? MainViewModel.Player2Score : "0");
 
-                var player1NameTextCss = cssFileTextReplacer.ReplacePlayer1NameTextTemplateFileText(player1NameTextTemplateCss, MainViewModel.Player1Sponsor, MainViewModel.Player1Name);
-                var player2NameTextCss = cssFileTextReplacer.ReplacePlayer2NameTextTemplateFileText(player2NameTextTemplateCss, MainViewModel.Player2Sponsor, MainViewModel.Player2Name);
+                var player1NameTextCss = cssFileTextReplacer.ReplaceTemplateFileTextForTeam(player1NameTextTemplateCss, MainViewModel.Player1Sponsor, MainViewModel.Player1Name);
+                var player2NameTextCss = cssFileTextReplacer.ReplaceTemplateFileTextForTeam(player2NameTextTemplateCss, MainViewModel.Player2Sponsor, MainViewModel.Player2Name);
 
-                var player1PortCss = cssFileTextReplacer.ReplacePlayer1PortTemplateFileText(player1PortTemplateCss, MainViewModel.Player1SelectedPort.Path);
-                var player2PortCss = cssFileTextReplacer.ReplacePlayer2PortTemplateFileText(player2PortTemplateCss, MainViewModel.Player2SelectedPort.Path);
+                var player1CharacterCss = cssFileTextReplacer.ReplaceTemplateFileText(player1CharacterTemplateCss, MainViewModel.Player1SelectedCharacter != null ? MainViewModel.Player1SelectedCharacter.Path : @"..\\characterIcons\\random.png");
+                var player2CharacterCss = cssFileTextReplacer.ReplaceTemplateFileText(player2CharacterTemplateCss, MainViewModel.Player2SelectedCharacter != null ? MainViewModel.Player2SelectedCharacter.Path : @"..\\characterIcons\\random.png");
 
-                var player1ScoreTextCss = cssFileTextReplacer.ReplacePlayer1ScoreTextTemplateFileText(player1ScoreTextTemplateCss, MainViewModel.Player1Score);
-                var player2ScoreTextCss = cssFileTextReplacer.ReplacePlayer2ScoreTextTemplateFileText(player2ScoreTextTemplateCss, MainViewModel.Player2Score);
+                var player1PortCss = cssFileTextReplacer.ReplaceTemplateFileText(player1PortTemplateCss, MainViewModel.Player1SelectedPort != null ? MainViewModel.Player1SelectedPort.Path : @"..\\playerPorts\\playerPort8.png");
+                var player2PortCss = cssFileTextReplacer.ReplaceTemplateFileText(player2PortTemplateCss, MainViewModel.Player2SelectedPort != null ? MainViewModel.Player2SelectedPort.Path : @"..\\playerPorts\\playerPort8.png");
 
-                var roundBoxTextCss = cssFileTextReplacer.ReplaceRoundBoxTextTemplateFileText(roundBoxTextTemplateCss, MainViewModel.Round);
+                var player1TwitterTextCss = cssFileTextReplacer.ReplaceTemplateFileText(player1TwitterTextTemplateCss, MainViewModel.Player1Twitter);
+                var player2TwitterTextCss = cssFileTextReplacer.ReplaceTemplateFileText(player2TwitterTextTemplateCss, MainViewModel.Player2Twitter);
+
+                var roundBoxTextCss = cssFileTextReplacer.ReplaceTemplateFileText(roundBoxTextTemplateCss, $@"{MainViewModel.Round} / {MainViewModel.BestOf}");
+                var tournamentBoxTextCss = cssFileTextReplacer.ReplaceTemplateFileText(tournamentBoxTextTemplateCss, MainViewModel.TournamentName);
 
                 //Write
-                cssFileWriter.WritePlayer1CharacterFile(player1CharacterCss);
-                cssFileWriter.WritePlayer2CharacterFile(player2CharacterCss);
+                cssFileWriter.WriteFile(@"Files\css\player1ScoreText.css", player1ScoreTextCss);
+                cssFileWriter.WriteFile(@"Files\css\player2ScoreText.css", player2ScoreTextCss);
 
-                cssFileWriter.WritePlayer1NameTextFile(player1NameTextCss);
-                cssFileWriter.WritePlayer2NameTextFile(player2NameTextCss);
+                cssFileWriter.WriteFile(@"Files\css\player1NameText.css", player1NameTextCss);
+                cssFileWriter.WriteFile(@"Files\css\player2NameText.css", player2NameTextCss);
 
-                cssFileWriter.WritePlayer1PortFile(player1PortCss);
-                cssFileWriter.WritePlayer2PortFile(player2PortCss);
+                cssFileWriter.WriteFile(@"Files\css\player1Character.css", player1CharacterCss);
+                cssFileWriter.WriteFile(@"Files\css\player2Character.css", player2CharacterCss);
 
-                cssFileWriter.WritePlayer1ScoreTextFile(player1ScoreTextCss);
-                cssFileWriter.WritePlayer2ScoreTextFile(player2ScoreTextCss);
+                cssFileWriter.WriteFile(@"Files\css\player1Port.css", player1PortCss);
+                cssFileWriter.WriteFile(@"Files\css\player2Port.css", player2PortCss);
 
-                cssFileWriter.WriteRoundBoxTextFile(roundBoxTextCss);
+                cssFileWriter.WriteFile(@"Files\css\roundBoxText.css", roundBoxTextCss);
+                cssFileWriter.WriteFile(@"Files\css\tournamentBoxText.css", tournamentBoxTextCss);
             }
             catch (Exception ex)
             {

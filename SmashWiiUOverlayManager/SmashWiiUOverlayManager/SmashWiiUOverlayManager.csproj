@@ -61,7 +61,6 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="FileManagers\CssFileDeleter.cs" />
     <Compile Include="FileManagers\CssFileReader.cs" />
     <Compile Include="FileManagers\CssFileTextReplacer.cs" />
     <Compile Include="FileManagers\CssFileWriter.cs" />
@@ -278,6 +277,15 @@
     <Content Include="Files\CharacterIcons\zerosuitsamus.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Files\cssTemplates\player1TwitterText.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\cssTemplates\player2TwitterText.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\cssTemplates\tournamentBoxText.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Files\gameOverlay.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -310,16 +318,16 @@
     <Content Include="Files\cssTemplates\roundBoxText.css">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Files\cssTemplates\styles.css">
+    <Content Include="Files\css\styles.css">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Files\css\styles.css">
+    <Content Include="Files\javascript\fitty.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Files\javascript\jQuery.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Files\roundBoxBackground\roundBoxBackground.png">
+    <Content Include="Files\boxBackground\infoBoxBackground.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Files\playerPorts\playerPort1.png">
