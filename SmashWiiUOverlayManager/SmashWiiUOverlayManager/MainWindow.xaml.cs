@@ -72,11 +72,11 @@ namespace SmashWiiUOverlayManager
                 var player1NameTextCss = cssFileTextReplacer.ReplaceTemplateFileTextForTeam(player1NameTextTemplateCss, MainViewModel.Player1Sponsor, MainViewModel.Player1Name);
                 var player2NameTextCss = cssFileTextReplacer.ReplaceTemplateFileTextForTeam(player2NameTextTemplateCss, MainViewModel.Player2Sponsor, MainViewModel.Player2Name);
 
-                var player1CharacterCss = cssFileTextReplacer.ReplaceTemplateFileText(player1CharacterTemplateCss, MainViewModel.Player1SelectedCharacter != null ? MainViewModel.Player1SelectedCharacter.Path : @"..\\characterIcons\\random.png");
-                var player2CharacterCss = cssFileTextReplacer.ReplaceTemplateFileText(player2CharacterTemplateCss, MainViewModel.Player2SelectedCharacter != null ? MainViewModel.Player2SelectedCharacter.Path : @"..\\characterIcons\\random.png");
+                var player1CharacterCss = cssFileTextReplacer.ReplaceTemplateFileText(player1CharacterTemplateCss, MainViewModel.Player1SelectedCharacter != null ? MainViewModel.Player1SelectedCharacter.Path : @"..\characterIcons\random.png");
+                var player2CharacterCss = cssFileTextReplacer.ReplaceTemplateFileText(player2CharacterTemplateCss, MainViewModel.Player2SelectedCharacter != null ? MainViewModel.Player2SelectedCharacter.Path : @"..\characterIcons\random.png");
 
-                var player1PortCss = cssFileTextReplacer.ReplaceTemplateFileText(player1PortTemplateCss, MainViewModel.Player1SelectedPort != null ? MainViewModel.Player1SelectedPort.Path : @"..\\playerPorts\\playerPort8.png");
-                var player2PortCss = cssFileTextReplacer.ReplaceTemplateFileText(player2PortTemplateCss, MainViewModel.Player2SelectedPort != null ? MainViewModel.Player2SelectedPort.Path : @"..\\playerPorts\\playerPort8.png");
+                var player1PortCss = cssFileTextReplacer.ReplaceTemplateFileText(player1PortTemplateCss, MainViewModel.Player1SelectedPort != null ? MainViewModel.Player1SelectedPort.Path : @"..\playerPorts\playerPort8.png");
+                var player2PortCss = cssFileTextReplacer.ReplaceTemplateFileText(player2PortTemplateCss, MainViewModel.Player2SelectedPort != null ? MainViewModel.Player2SelectedPort.Path : @"..\playerPorts\playerPort8.png");
 
                 var player1TwitterTextCss = cssFileTextReplacer.ReplaceTemplateFileText(player1TwitterTextTemplateCss, MainViewModel.Player1Twitter);
                 var player2TwitterTextCss = cssFileTextReplacer.ReplaceTemplateFileText(player2TwitterTextTemplateCss, MainViewModel.Player2Twitter);

@@ -58,14 +58,14 @@ namespace SmashWiiUOverlayManager.Models
         {
             return new ObservableCollection<Port>
             {
-                new Port(0, "Player 1", @"..\\playerPorts\\playerPort1.png"),
-                new Port(1, "Player 2", @"..\\playerPorts\\playerPort2.png"),
-                new Port(2, "Player 3", @"..\\playerPorts\\playerPort3.png"),
-                new Port(3, "Player 4", @"..\\playerPorts\\playerPort4.png"),
-                new Port(4, "Player 5", @"..\\playerPorts\\playerPort5.png"),
-                new Port(5, "Player 6", @"..\\playerPorts\\playerPort6.png"),
-                new Port(6, "Player 7", @"..\\playerPorts\\playerPort7.png"),
-                new Port(7, "Player 8", @"..\\playerPorts\\playerPort8.png"),
+                new Port(0, "Player 1", @"..\playerPorts\playerPort1.png"),
+                new Port(1, "Player 2", @"..\playerPorts\playerPort2.png"),
+                new Port(2, "Player 3", @"..\playerPorts\playerPort3.png"),
+                new Port(3, "Player 4", @"..\playerPorts\playerPort4.png"),
+                new Port(4, "Player 5", @"..\playerPorts\playerPort5.png"),
+                new Port(5, "Player 6", @"..\playerPorts\playerPort6.png"),
+                new Port(6, "Player 7", @"..\playerPorts\playerPort7.png"),
+                new Port(7, "Player 8", @"..\playerPorts\playerPort8.png")
             };
         }
 
