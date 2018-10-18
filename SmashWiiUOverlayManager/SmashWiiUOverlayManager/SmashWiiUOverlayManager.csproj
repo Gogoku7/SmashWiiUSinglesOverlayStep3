@@ -100,181 +100,181 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <Content Include="Files\CharacterIcons\bayonetta.png">
+    <Content Include="Files\characterIcons\bayonetta.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Files\CharacterIcons\bowser.png">
+    <Content Include="Files\characterIcons\bowser.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Files\CharacterIcons\bowserjr.png">
+    <Content Include="Files\characterIcons\bowserjr.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Files\CharacterIcons\captainfalcon.png">
+    <Content Include="Files\characterIcons\captainfalcon.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Files\CharacterIcons\charizard.png">
+    <Content Include="Files\characterIcons\charizard.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Files\CharacterIcons\cloud.png">
+    <Content Include="Files\characterIcons\cloud.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Files\CharacterIcons\corrin.png">
+    <Content Include="Files\characterIcons\corrin.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Files\CharacterIcons\darkpit.png">
+    <Content Include="Files\characterIcons\darkpit.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Files\CharacterIcons\diddykong.png">
+    <Content Include="Files\characterIcons\diddykong.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Files\CharacterIcons\donkeykong.png">
+    <Content Include="Files\characterIcons\donkeykong.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Files\CharacterIcons\drmario.png">
+    <Content Include="Files\characterIcons\drmario.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Files\CharacterIcons\duckhunt.png">
+    <Content Include="Files\characterIcons\duckhunt.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Files\CharacterIcons\falco.png">
+    <Content Include="Files\characterIcons\falco.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Files\CharacterIcons\fox.png">
+    <Content Include="Files\characterIcons\fox.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Files\CharacterIcons\ganondorf.png">
+    <Content Include="Files\characterIcons\ganondorf.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Files\CharacterIcons\greninja.png">
+    <Content Include="Files\characterIcons\greninja.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Files\CharacterIcons\ike.png">
+    <Content Include="Files\characterIcons\ike.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Files\CharacterIcons\jigglypuff.png">
+    <Content Include="Files\characterIcons\jigglypuff.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Files\CharacterIcons\kingdedede.png">
+    <Content Include="Files\characterIcons\kingdedede.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Files\CharacterIcons\kirby.png">
+    <Content Include="Files\characterIcons\kirby.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Files\CharacterIcons\link.png">
+    <Content Include="Files\characterIcons\link.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Files\CharacterIcons\littlemac.png">
+    <Content Include="Files\characterIcons\littlemac.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Files\CharacterIcons\lucario.png">
+    <Content Include="Files\characterIcons\lucario.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Files\CharacterIcons\lucas.png">
+    <Content Include="Files\characterIcons\lucas.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Files\CharacterIcons\lucina.png">
+    <Content Include="Files\characterIcons\lucina.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Files\CharacterIcons\luigi.png">
+    <Content Include="Files\characterIcons\luigi.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Files\CharacterIcons\mario.png">
+    <Content Include="Files\characterIcons\mario.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Files\CharacterIcons\marth.png">
+    <Content Include="Files\characterIcons\marth.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Files\CharacterIcons\megaman.png">
+    <Content Include="Files\characterIcons\megaman.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Files\CharacterIcons\metaknight.png">
+    <Content Include="Files\characterIcons\metaknight.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Files\CharacterIcons\mewtwo.png">
+    <Content Include="Files\characterIcons\mewtwo.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Files\CharacterIcons\miibrawler.png">
+    <Content Include="Files\characterIcons\miibrawler.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Files\CharacterIcons\miigunner.png">
+    <Content Include="Files\characterIcons\miigunner.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Files\CharacterIcons\miiswordfighter.png">
+    <Content Include="Files\characterIcons\miiswordfighter.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Files\CharacterIcons\mrgamewatch.png">
+    <Content Include="Files\characterIcons\mrgamewatch.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Files\CharacterIcons\ness.png">
+    <Content Include="Files\characterIcons\ness.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Files\CharacterIcons\olimar.png">
+    <Content Include="Files\characterIcons\olimar.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Files\CharacterIcons\pacman.png">
+    <Content Include="Files\characterIcons\pacman.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Files\CharacterIcons\palutena.png">
+    <Content Include="Files\characterIcons\palutena.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Files\CharacterIcons\peach.png">
+    <Content Include="Files\characterIcons\peach.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Files\CharacterIcons\pikachu.png">
+    <Content Include="Files\characterIcons\pikachu.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Files\CharacterIcons\pit.png">
+    <Content Include="Files\characterIcons\pit.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Files\CharacterIcons\random.png">
+    <Content Include="Files\characterIcons\random.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Files\CharacterIcons\rob.png">
+    <Content Include="Files\characterIcons\rob.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Files\CharacterIcons\robin.png">
+    <Content Include="Files\characterIcons\robin.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Files\CharacterIcons\rosalina.png">
+    <Content Include="Files\characterIcons\rosalina.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Files\CharacterIcons\roy.png">
+    <Content Include="Files\characterIcons\roy.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Files\CharacterIcons\ryu.png">
+    <Content Include="Files\characterIcons\ryu.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Files\CharacterIcons\samus.png">
+    <Content Include="Files\characterIcons\samus.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Files\CharacterIcons\sheik.png">
+    <Content Include="Files\characterIcons\sheik.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Files\CharacterIcons\shulk.png">
+    <Content Include="Files\characterIcons\shulk.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Files\CharacterIcons\sonic.png">
+    <Content Include="Files\characterIcons\sonic.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Files\CharacterIcons\toonlink.png">
+    <Content Include="Files\characterIcons\toonlink.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Files\CharacterIcons\villager.png">
+    <Content Include="Files\characterIcons\villager.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Files\CharacterIcons\wario.png">
+    <Content Include="Files\characterIcons\wario.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Files\CharacterIcons\wiifittrainer.png">
+    <Content Include="Files\characterIcons\wiifittrainer.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Files\CharacterIcons\yoshi.png">
+    <Content Include="Files\characterIcons\yoshi.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Files\CharacterIcons\zelda.png">
+    <Content Include="Files\characterIcons\zelda.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Files\CharacterIcons\zerosuitsamus.png">
+    <Content Include="Files\characterIcons\zerosuitsamus.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Files\cssTemplates\player1TwitterText.css">
