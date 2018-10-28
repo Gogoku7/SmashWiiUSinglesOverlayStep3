@@ -86,7 +86,7 @@ namespace SmashWiiUOverlayManager.Models
                 new Character(22, "Lucario", @"..\\characterIcons\\lucario.png"),
                 new Character(23, "Lucas", @"..\\characterIcons\\lucas.png"),
                 new Character(24, "Lucina", @"..\\characterIcons\\lucina.png"),
-                new Character(25, "Luigi", @"..\\characterIconsluigi.png"),
+                new Character(25, "Luigi", @"..\\characterIcons\\luigi.png"),
                 new Character(26, "Mario", @"..\\characterIcons\\mario.png"),
                 new Character(27, "Marth", @"..\\characterIcons\\marth.png"),
                 new Character(28, "Mega Man", @"..\\characterIcons\\megaman.png"),
